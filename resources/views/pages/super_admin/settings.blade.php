@@ -8,7 +8,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <form enctype="multipart/form-data" method="post" action="{{ route('settings.update') }}">
                 @csrf @method('PUT')
             <div class="row">

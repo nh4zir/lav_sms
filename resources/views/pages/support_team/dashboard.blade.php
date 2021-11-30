@@ -73,7 +73,9 @@
          {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <div class="fullcalendar-basic"></div>
         </div>
     </div>

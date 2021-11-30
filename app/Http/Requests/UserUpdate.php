@@ -35,7 +35,7 @@ class UserUpdate extends FormRequest
             'nal_id' => 'Nationality',
             'state_id' => 'State',
             'lga_id' => 'LGA',
-            'phone2' => 'Telephone',
+            'phone2' => 'GPS Location',
         ];
     }
 }

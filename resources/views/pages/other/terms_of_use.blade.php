@@ -10,7 +10,9 @@
                         <h1 class="card-title font-weight-bold text-center">TERMS OF USE</h1>
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
                         <div class="row">
                             <div style="font-size: 16px;" class="col-md-10 offset-md-1">
                                 <p>Last modified: November 4, 2019</p>

@@ -8,7 +8,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <div class="row">
                 <div class="col-md-6">
                     <form class="ajax-update-h" method="post" action="{{ route('subjects.update', $s->id) }}">

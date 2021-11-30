@@ -10,7 +10,9 @@
         <form class="login-form" method="POST" action="{{ route('password.email') }}">
             @csrf
             <div class="card mb-0">
-                <div class="card-body">
+                <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
 
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">

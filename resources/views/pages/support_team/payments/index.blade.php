@@ -8,7 +8,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <form method="post" action="{{ route('payments.select_year') }}">
                 @csrf
                 <div class="row">
@@ -46,7 +48,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <ul class="nav nav-tabs nav-tabs-highlight">
                 <li class="nav-item"><a href="#all-payments" class="nav-link active" data-toggle="tab">All Classes</a></li>
                 <li class="nav-item dropdown">

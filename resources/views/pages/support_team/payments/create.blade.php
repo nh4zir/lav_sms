@@ -8,7 +8,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <div class="row">
                 <div class="col-md-6">
                     <form class="ajax-store" method="post" action="{{ route('payments.store') }}">
@@ -43,7 +45,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="amount" class="col-lg-3 col-form-label font-weight-semibold">Amount (<del style="text-decoration-style: double">N</del>) <span class="text-danger">*</span></label>
+                            <label for="amount" class="col-lg-3 col-form-label font-weight-semibold">Amount (₵) <span class="text-danger">*</span></label>
                             <div class="col-lg-9">
                                 <input class="form-control" value="{{ old('amount') }}" required name="amount" id="amount" type="number">
                             </div>

@@ -4,7 +4,9 @@
 <div class="row">
     <div class="col-md-3 text-center">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
                 <img style="width: 90%; height:90%" src="{{ $sr->user->photo }}" alt="photo" class="rounded-circle">
                 <br>
                 <h3 class="mt-3">{{ $sr->user->name }}</h3>
@@ -13,7 +15,9 @@
     </div>
     <div class="col-md-9">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
                 <ul class="nav nav-tabs nav-tabs-highlight">
                     <li class="nav-item">
                         <a href="#" class="nav-link active">{{ $sr->user->name }}</a>
@@ -57,6 +61,12 @@
                                 <td class="font-weight-bold">Address</td>
                                 <td>{{ $sr->user->address }}</td>
                             </tr>
+                            @if($sr->user->phone2)
+                                    <tr>
+                                        <td class="font-weight-bold">GPS Address</td>
+                                        <td>{{$sr->user->phone2 }}</td>
+                                    </tr>
+                                @endif
                             @if($sr->user->email)
                             <tr>
                                 <td class="font-weight-bold">Email</td>
@@ -66,7 +76,7 @@
                             @if($sr->user->phone)
                                 <tr>
                                     <td class="font-weight-bold">Phone</td>
-                                    <td>{{$sr->user->phone.' '.$sr->user->phone2 }}</td>
+                                    <td>{{$sr->user->phone}}</td>
                                 </tr>
                             @endif
                             <tr>

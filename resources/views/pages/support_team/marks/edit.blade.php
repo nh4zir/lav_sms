@@ -6,8 +6,8 @@
             <th>S/N</th>
             <th>Name</th>
             <th>ADM_NO</th>
-            <th>1ST CA (20)</th>
-            <th>2ND CA (20)</th>
+            <th>CLASS ASSESSMENT (20)</th>
+            <th>MID TERM TEST(20)</th>
             <th>EXAM (60)</th>
         </tr>
         </thead>

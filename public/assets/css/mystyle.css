@@ -1,0 +1,27 @@
+.sidebar-dark .nav-sidebar .nav-link, .sidebar-light .card[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent) .nav-sidebar .nav-link {
+    color: #263238;
+}
+
+
+.sidebar-dark {
+    background-color: #f5f5f5;
+    color: #263238;
+    border-right: 3px solid white;
+}
+
+.navbar-dark {
+    color: rgba(255,255,255,.9);
+    background-color: #1793cd;
+    border-bottom-color: rgba(255,255,255,.1);
+}
+
+.navbar-dark {
+    color: rgba(255,255,255,.9);
+    background-color: #1793cd;
+    border-bottom-color:rgba(255,255,255,.9);
+}
+
+.icon-cog3:before {
+    content: "\eb76";
+    color: black;
+}

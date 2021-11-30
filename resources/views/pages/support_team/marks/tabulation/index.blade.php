@@ -7,7 +7,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
         <form method="post" action="{{ route('marks.tabulation_select') }}">
                     @csrf
                     <div class="row">
@@ -68,7 +70,9 @@
             <div class="card-header">
                 <h6 class="card-title font-weight-bold">Tabulation Sheet for {{ $my_class->name.' '.$section->name.' - '.$ex->name.' ('.$year.')' }}</h6>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
                 <table class="table table-responsive table-striped">
                     <thead>
                     <tr>

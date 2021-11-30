@@ -1,7 +1,8 @@
 @extends('layouts.login_master')
 
 @section('content')
-    <div class="page-content login-cover">
+    <div class="page-content login-cover" style="background: url(../../../../../../global_assets/images/login_bg.jpeg) no-repeat;
+    background-size: cover;">
 
         <!-- Main content -->
         <div class="content-wrapper">
@@ -13,9 +14,12 @@
                 <form class="login-form " method="post" action="{{ route('login') }}">
                     @csrf
                     <div class="card mb-0">
-                        <div class="card-body">
+                        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
                             <div class="text-center mb-3">
-                                <i class="icon-people icon-2x text-warning-400 border-warning-400 border-3 rounded-round p-3 mb-3 mt-1"></i>
+                            <img src="{{url('/global_assets/images/logo.png')}}" alt="Image" width="100px"   />    
+                            {{-- <i class="icon-people icon-2x text-warning-400 border-warning-400 border-3 rounded-round p-3 mb-3 mt-1"></i> --}}
                                 <h5 class="mb-0">Login to your account</h5>
                                 <span class="d-block text-muted">Your credentials</span>
                             </div>

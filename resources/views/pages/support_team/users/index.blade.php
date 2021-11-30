@@ -78,8 +78,8 @@
 
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label>Telephone:</label>
-                                        <input value="{{ old('phone2') }}" type="text" name="phone2" class="form-control" placeholder="+2341234567" >
+                                        <label>GPS Location: <span class="text-danger">*</span></label>
+                                        <input value="{{ old('phone2') }}" required type="text" name="phone2" class="form-control" placeholder="+2341234567" >
                                     </div>
                                 </div>
 
@@ -127,7 +127,7 @@
 
                             <div class="row">
                                 {{--State--}}
-                                <div class="col-md-4">
+                                {{-- <div class="col-md-4">
                                     <label for="state_id">State: <span class="text-danger">*</span></label>
                                     <select onchange="getLGA(this.value)" required data-placeholder="Choose.." class="select-search form-control" name="state_id" id="state_id">
                                         <option value=""></option>
@@ -135,14 +135,14 @@
                                             <option {{ (old('state_id') == $st->id ? 'selected' : '') }} value="{{ $st->id }}">{{ $st->name }}</option>
                                         @endforeach
                                     </select>
-                                </div>
+                                </div> --}}
                                 {{--LGA--}}
-                                <div class="col-md-4">
+                                {{-- <div class="col-md-4">
                                     <label for="lga_id">LGA: <span class="text-danger">*</span></label>
                                     <select required data-placeholder="Select State First" class="select-search form-control" name="lga_id" id="lga_id">
                                         <option value=""></option>
                                     </select>
-                                </div>
+                                </div> --}}
                                 {{--BLOOD GROUP--}}
                                 <div class="col-md-4">
                                     <div class="form-group">

@@ -8,7 +8,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <div class="col-md-8">
                 <form class="ajax-update" method="post" action="{{ route('ttr.update', $ttr->id) }}">
                     @csrf @method('PUT')

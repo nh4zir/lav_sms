@@ -13,19 +13,14 @@
                 <h6>Personal data</h6>
                 <fieldset>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label>Full Name: <span class="text-danger">*</span></label>
                                 <input value="{{ old('name') }}" required type="text" name="name" placeholder="Full Name" class="form-control">
                                 </div>
                             </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Address: <span class="text-danger">*</span></label>
-                                <input value="{{ old('address') }}" class="form-control" placeholder="Address" name="address" type="text" required>
-                            </div>
-                        </div>
+                        
                     </div>
 
                     <div class="row">
@@ -56,8 +51,8 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label>Telephone:</label>
-                                <input value="{{ old('phone2') }}" type="text" name="phone2" class="form-control" placeholder="" >
+                                <label>GPS Location: <span class="text-danger">*</span></label>
+                                <input value="{{ old('phone2') }}" required type="text" name="phone2" class="form-control" placeholder="" >
                             </div>
                         </div>
 
@@ -84,7 +79,13 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Address: <span class="text-danger">*</span></label>
+                                <input value="{{ old('address') }}" class="form-control" placeholder="Address" name="address" type="text" required>
+                            </div>
+                        </div>
+                        {{-- <div class="col-md-3">
                             <label for="state_id">State: <span class="text-danger">*</span></label>
                             <select onchange="getLGA(this.value)" required data-placeholder="Choose.." class="select-search form-control" name="state_id" id="state_id">
                                 <option value=""></option>
@@ -99,7 +100,7 @@
                             <select required data-placeholder="Select State First" class="select-search form-control" name="lga_id" id="lga_id">
                                 <option value=""></option>
                             </select>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="row">
 

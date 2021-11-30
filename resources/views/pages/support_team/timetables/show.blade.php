@@ -10,7 +10,9 @@
                 <div class="col-md-4"><h6 class="card-title"><strong>Year: </strong> {{ ($ttr->exam_id) ? 'Exam TimeTable' : 'Class TimeTable' }} {{ '('.$ttr->year.')' }}</h6></div>
             </div>
         </div>
-            <div class="card-body">
+            <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
                 <table class="table table-responsive table-striped">
                     <thead>
                     <tr>

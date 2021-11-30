@@ -7,7 +7,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <form class="ajax-update" method="post" action="{{ route('marks.batch_update') }}">
                 @csrf @method('PUT')
                 <div class="row">

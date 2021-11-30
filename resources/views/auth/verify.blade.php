@@ -7,7 +7,9 @@
             <div class="card">
                 <div class="card-header">{{ __('Verify Your Email Address') }}</div>
 
-                <div class="card-body">
+                <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
                     @if (session('resent'))
                         <div class="alert alert-success" role="alert">
                             {{ __('A fresh verification link has been sent to your email address.') }}

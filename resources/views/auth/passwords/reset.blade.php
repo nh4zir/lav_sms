@@ -22,7 +22,9 @@
                             @endif
                         </div>
 
-                        <div class="card-body">
+                        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
                             <form method="POST" action="{{ route('password.update') }}">
                                 @csrf
 

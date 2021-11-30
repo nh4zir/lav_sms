@@ -25,12 +25,12 @@ class UsersTableSeeder extends Seeder
 
     protected function createNewUsers()
     {
-        $password = Hash::make('cj'); // Default user password
+        $password = Hash::make('ais'); // Default user password
 
         $d = [
 
             ['name' => 'CJ Inspired',
-                'email' => 'cj@cj.com',
+                'email' => 'superadmin@gmail.com',
                 'username' => 'cj',
                 'password' => $password,
                 'user_type' => 'super_admin',
@@ -48,7 +48,7 @@ class UsersTableSeeder extends Seeder
             ],
 
             ['name' => 'Teacher Chike',
-                'email' => 'teacher@teacher.com',
+                'email' => 'teacher@gmail.com',
                 'user_type' => 'teacher',
                 'username' => 'teacher',
                 'password' => $password,
@@ -57,7 +57,7 @@ class UsersTableSeeder extends Seeder
             ],
 
             ['name' => 'Parent Kaba',
-                'email' => 'parent@parent.com',
+                'email' => 'parent@gmail.com',
                 'user_type' => 'parent',
                 'username' => 'parent',
                 'password' => $password,
@@ -66,7 +66,7 @@ class UsersTableSeeder extends Seeder
             ],
 
             ['name' => 'Accountant Jeff',
-                'email' => 'accountant@accountant.com',
+                'email' => 'accountant@gmail.com',
                 'user_type' => 'accountant',
                 'username' => 'accountant',
                 'password' => $password,

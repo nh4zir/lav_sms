@@ -8,7 +8,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <ul class="nav nav-tabs nav-tabs-highlight">
                 <li class="nav-item"><a href="#change-pass" class="nav-link active" data-toggle="tab">Change Password</a></li>
                 @if(Qs::userIsPTA())
@@ -98,7 +100,7 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="phone2" class="col-lg-3 col-form-label font-weight-semibold">Telephone </label>
+                                        <label for="phone2" class="col-lg-3 col-form-label font-weight-semibold">GPS Location </label>
                                         <div class="col-lg-9">
                                             <input id="phone2" value="{{ $my->phone2 }}" name="phone2"  type="text" class="form-control" >
                                         </div>

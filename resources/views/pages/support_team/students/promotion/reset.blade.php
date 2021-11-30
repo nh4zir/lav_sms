@@ -17,7 +17,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
 
             <table id="promotions-list" class="table datatable-button-html5-columns">
                 <thead>

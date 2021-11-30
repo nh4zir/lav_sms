@@ -18,7 +18,9 @@
 
         <!-- User menu -->
         <div class="sidebar-user">
-            <div class="card-body">
+            <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
                 <div class="media">
                     <div class="mr-3">
                         <a href="{{ route('my_account') }}"><img src="{{ Auth::user()->photo }}" width="38" height="38" class="rounded-circle" alt="photo"></a>

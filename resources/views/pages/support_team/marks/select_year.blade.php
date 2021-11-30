@@ -7,7 +7,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <div class="row">
                 <div class="col-md-6 offset-md-3">
                     <form method="post" action="{{ route('marks.year_select', $student_id) }}">

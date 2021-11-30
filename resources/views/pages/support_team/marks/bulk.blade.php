@@ -7,7 +7,9 @@
             {!! Qs::getPanelOptions() !!}
         </div>
 
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
                 <form method="post" action="{{ route('marks.bulk_select') }}">
                     @csrf
                     <div class="row">
@@ -59,7 +61,9 @@
     </div>
     @if($selected)
     <div class="card">
-        <div class="card-body">
+        <div class="card-body" style="
+    border-bottom: 1px solid #263238;
+">
             <table class="table datatable-button-html5-columns">
                 <thead>
                 <tr>
